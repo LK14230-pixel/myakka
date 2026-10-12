@@ -1,0 +1,2369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday My Dear Akka ❤️</title>
+
+
+<style>
+
+/* =========================================================
+   RESET
+========================================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    min-height:100vh;
+    font-family:"Poppins","Segoe UI",Arial,sans-serif;
+    overflow:hidden;
+}
+
+
+/* =========================================================
+   PAGE SYSTEM
+========================================================= */
+
+.page{
+
+    position:fixed;
+
+    inset:0;
+
+    width:100%;
+    height:100%;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    padding:25px;
+
+    opacity:0;
+    visibility:hidden;
+
+    transform:scale(1.03);
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease,
+        visibility .8s;
+
+    overflow-y:auto;
+
+    z-index:1;
+}
+
+.page.active{
+
+    opacity:1;
+
+    visibility:visible;
+
+    transform:scale(1);
+
+    z-index:10;
+}
+
+
+/* =========================================================
+   COMMON BACKGROUND OVERLAY
+========================================================= */
+
+.page::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.25),
+            rgba(0,0,0,.35)
+        );
+
+    z-index:-1;
+}
+
+
+/* =========================================================
+   PAGE 1 — LOGIN BACKGROUND
+========================================================= */
+
+#loginPage{
+
+    background:
+        url("image.1.jpeg")
+        center center / cover no-repeat;
+}
+
+#loginPage::before{
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.48),
+            rgba(0,0,0,.65)
+        );
+}
+
+
+/* =========================================================
+   PAGE 2 — BIRTHDAY BACKGROUND
+========================================================= */
+
+#birthdayPage{
+
+    background:
+        url("image.1.jpeg")
+        center center / cover no-repeat;
+}
+
+#birthdayPage::before{
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.18),
+            rgba(0,0,0,.30)
+        );
+}
+
+
+/* =========================================================
+   PAGE 3 — SURPRISE BACKGROUND
+========================================================= */
+
+#surprisePage1{
+
+    background:
+        url("image.8.jpeg")
+        center center / cover no-repeat;
+}
+
+#surprisePage1::before{
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,.18),
+            rgba(0,0,0,.04)
+        );
+}
+
+
+/* =========================================================
+   PAGE 4 — SLIDESHOW BACKGROUND
+========================================================= */
+
+#slideshowPage{
+
+    background:
+        url("image.4.jpeg")
+        center center / cover no-repeat;
+}
+
+#slideshowPage::before{
+
+    background:
+        rgba(0,0,0,.30);
+}
+
+
+/* =========================================================
+   PAGE 5 — FINAL BACKGROUND
+========================================================= */
+
+#finalPage{
+
+    background:
+        url("image.12.jpeg")
+        center center / cover no-repeat;
+}
+
+#finalPage::before{
+
+    background:
+        rgba(0,0,0,.20);
+}
+
+
+/* =========================================================
+   COMMON CARD
+========================================================= */
+
+.card{
+
+    width:100%;
+
+    max-width:850px;
+
+    padding:45px;
+
+    border-radius:30px;
+
+    background:
+        rgba(255,255,255,.90);
+
+    backdrop-filter:blur(15px);
+
+    -webkit-backdrop-filter:blur(15px);
+
+    border:
+        1px solid rgba(255,255,255,.65);
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.30),
+        0 0 40px rgba(255,64,129,.18);
+
+    text-align:center;
+
+    position:relative;
+
+    animation:
+        cardEnter .9s ease;
+}
+
+
+@keyframes cardEnter{
+
+    from{
+        opacity:0;
+        transform:
+            translateY(40px)
+            scale(.94);
+    }
+
+    to{
+        opacity:1;
+        transform:
+            translateY(0)
+            scale(1);
+    }
+
+}
+
+
+/* =========================================================
+   LOGIN CARD
+========================================================= */
+
+.login-card{
+
+    max-width:470px;
+
+}
+
+
+.login-icon{
+
+    font-size:75px;
+
+    animation:
+        floating 2s ease-in-out infinite;
+}
+
+
+.login-title{
+
+    color:#c2185b;
+
+    font-size:34px;
+
+    font-weight:900;
+
+    margin:12px 0;
+}
+
+
+.login-subtitle{
+
+    color:#555;
+
+    line-height:1.7;
+
+    margin-bottom:25px;
+}
+
+
+/* =========================================================
+   INPUT
+========================================================= */
+
+.input-box{
+
+    position:relative;
+
+    margin:15px 0;
+}
+
+
+.input-box span{
+
+    position:absolute;
+
+    left:18px;
+
+    top:50%;
+
+    transform:
+        translateY(-50%);
+
+    font-size:20px;
+
+}
+
+
+input{
+
+    width:100%;
+
+    padding:
+        17px
+        18px
+        17px
+        52px;
+
+    border-radius:17px;
+
+    border:
+        2px solid #f0cddd;
+
+    outline:none;
+
+    font-size:16px;
+
+    background:
+        rgba(255,255,255,.85);
+
+    transition:.3s;
+}
+
+
+input:focus{
+
+    border-color:#e91e63;
+
+    box-shadow:
+        0 0 20px
+        rgba(233,30,99,.18);
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.btn{
+
+    width:100%;
+
+    border:none;
+
+    border-radius:30px;
+
+    padding:16px 25px;
+
+    margin-top:15px;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff4081,
+            #e91e63,
+            #9c27b0
+        );
+
+    box-shadow:
+        0 10px 30px
+        rgba(233,30,99,.30);
+
+    transition:.35s;
+}
+
+
+.btn:hover{
+
+    transform:
+        translateY(-3px)
+        scale(1.02);
+
+    box-shadow:
+        0 18px 40px
+        rgba(233,30,99,.40);
+}
+
+
+.btn:active{
+
+    transform:scale(.96);
+
+}
+
+
+/* =========================================================
+   BIRTHDAY PAGE
+========================================================= */
+
+.birthday-card{
+
+    max-width:1050px;
+
+    display:grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:35px;
+
+    align-items:center;
+
+    text-align:left;
+}
+
+
+.wishes{
+
+    animation:
+        slideFromLeft 1s ease;
+}
+
+
+@keyframes slideFromLeft{
+
+    from{
+        opacity:0;
+        transform:
+            translateX(-70px);
+    }
+
+    to{
+        opacity:1;
+        transform:
+            translateX(0);
+    }
+
+}
+
+
+.small-title{
+
+    color:#e91e63;
+
+    font-size:18px;
+
+    font-weight:700;
+}
+
+
+.birthday-title{
+
+    font-size:42px;
+
+    line-height:1.25;
+
+    color:#c2185b;
+
+    margin:12px 0;
+}
+
+
+.highlight{
+
+    color:#ff4081;
+}
+
+
+.wishes-text{
+
+    color:#444;
+
+    line-height:1.9;
+
+    font-size:16px;
+
+    margin:20px 0;
+}
+
+
+/* =========================================================
+   CAKE
+========================================================= */
+
+.birthday-image-frame{
+    width:100%;
+    max-width:360px;
+    aspect-ratio:4 / 5;
+    margin:0 auto;
+    overflow:hidden;
+    border-radius:24px;
+    border:4px solid rgba(255,255,255,.9);
+    box-shadow:0 18px 45px rgba(0,0,0,.25);
+    background:#f8dce7;
+}
+.birthday-image-frame img{
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+}
+
+.cake-area{
+
+    min-height:330px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    position:relative;
+
+    animation:
+        slideFromRight 1s ease;
+}
+
+
+@keyframes slideFromRight{
+
+    from{
+        opacity:0;
+        transform:
+            translateX(70px);
+    }
+
+    to{
+        opacity:1;
+        transform:
+            translateX(0);
+    }
+
+}
+
+
+.cake{
+
+    width:240px;
+
+    height:125px;
+
+    background:
+        linear-gradient(
+            #ff80ab,
+            #e91e63
+        );
+
+    border-radius:
+        20px 20px 30px 30px;
+
+    position:relative;
+
+    box-shadow:
+        0 20px 40px
+        rgba(0,0,0,.25);
+
+    animation:
+        cakeFloat 2.5s
+        ease-in-out infinite;
+}
+
+
+@keyframes cakeFloat{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-12px);
+    }
+
+}
+
+
+.cake::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:215px;
+
+    height:45px;
+
+    left:12px;
+
+    top:-25px;
+
+    background:white;
+
+    border-radius:25px;
+}
+
+
+.cake::after{
+
+    content:"❤️ ❤️ ❤️";
+
+    position:absolute;
+
+    left:35px;
+
+    bottom:20px;
+
+    color:white;
+
+    font-size:22px;
+}
+
+
+.candle{
+
+    position:absolute;
+
+    width:20px;
+
+    height:65px;
+
+    background:
+        repeating-linear-gradient(
+            45deg,
+            white 0 7px,
+            #ff4081 7px 14px
+        );
+
+    top:-70px;
+
+    left:110px;
+
+    border-radius:5px;
+
+    z-index:3;
+}
+
+
+.flame{
+
+    position:absolute;
+
+    top:-115px;
+
+    left:98px;
+
+    font-size:38px;
+
+    animation:
+        flame .5s
+        infinite alternate;
+}
+
+
+@keyframes flame{
+
+    from{
+        transform:
+            scale(.8)
+            rotate(-5deg);
+    }
+
+    to{
+        transform:
+            scale(1.15)
+            rotate(5deg);
+    }
+
+}
+
+
+/* =========================================================
+   SURPRISE PAGE — LEFT LIGHTWEIGHT BOX
+========================================================= */
+
+.surprise-card{
+
+    width:100%;
+
+    max-width:650px;
+
+    margin-right:auto;
+
+    margin-left:3%;
+
+    padding:42px 45px;
+
+    border-radius:28px;
+
+    /* LIGHT TRANSPARENT BOX */
+
+    background:
+        rgba(255,255,255,.55);
+
+    backdrop-filter:blur(8px);
+
+    -webkit-backdrop-filter:blur(8px);
+
+    border:
+        1px solid rgba(255,255,255,.60);
+
+    box-shadow:
+        0 20px 55px
+        rgba(0,0,0,.20);
+
+    text-align:left;
+
+    position:relative;
+
+    animation:
+        surpriseLeft 1s ease;
+}
+
+
+@keyframes surpriseLeft{
+
+    from{
+        opacity:0;
+
+        transform:
+            translateX(-70px);
+    }
+
+    to{
+        opacity:1;
+
+        transform:
+            translateX(0);
+    }
+
+}
+
+
+.big-heart{
+
+    font-size:75px;
+
+    text-align:left;
+
+    animation:
+        heartbeat 1.2s
+        infinite;
+}
+
+
+@keyframes heartbeat{
+
+    0%,100%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.20);
+    }
+
+}
+
+
+.surprise-title{
+
+    font-size:40px;
+
+    color:#d81b60;
+
+    font-weight:900;
+
+    margin:12px 0 20px;
+}
+
+
+.message{
+
+    color:#333;
+
+    line-height:1.9;
+
+    font-size:17px;
+
+    margin:20px 0;
+}
+
+
+/* =========================================================
+   SLIDESHOW PAGE
+========================================================= */
+
+.slideshow-card{
+
+    max-width:1050px;
+
+    padding:30px;
+
+    /* REMOVE HEAVY WHITE BOX */
+
+    background:
+        rgba(255,255,255,.12);
+
+    border:
+        1px solid
+        rgba(255,255,255,.25);
+
+    backdrop-filter:
+        blur(8px);
+
+    -webkit-backdrop-filter:
+        blur(8px);
+
+}
+
+
+.slideshow-title{
+
+    color:white;
+
+    font-size:34px;
+
+    font-weight:900;
+
+    margin-bottom:8px;
+
+    text-shadow:
+        0 2px 10px rgba(0,0,0,.5);
+}
+
+
+.slideshow-subtitle{
+
+    color:white;
+
+    margin-bottom:20px;
+
+    text-shadow:
+        0 2px 8px rgba(0,0,0,.5);
+}
+
+
+/* =========================================================
+   SLIDESHOW
+   FULL IMAGE — NO CROPPING
+========================================================= */
+
+.slideshow{
+
+    position:relative;
+
+    width:100%;
+
+    height: min(58vh, 560px);
+    min-height: 280px;
+    overflow:hidden;
+    border-radius:25px;
+    background: rgba(8, 12, 25, .72);
+
+    box-shadow:
+        0 20px 60px
+        rgba(0,0,0,.45);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+}
+
+
+/* IMAGE */
+
+.slide{
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+
+    height:100%;
+
+    /* Show the complete photo without cutting off heads or bodies */
+    object-fit:contain;
+    object-position:center center;
+    display:block;
+
+    opacity:0;
+
+    transform:scale(1.02);
+
+    transition:
+        opacity 1s ease,
+        transform 5s ease;
+
+    background:
+        transparent;
+}
+
+
+.slide.active{
+
+    opacity:1;
+
+    transform:scale(1);
+
+}
+
+
+/* =========================================================
+   COUNTER
+========================================================= */
+
+.counter{
+
+    position:absolute;
+
+    top:18px;
+
+    right:18px;
+
+    background:
+        rgba(0,0,0,.55);
+
+    color:white;
+
+    padding:8px 15px;
+
+    border-radius:20px;
+
+    z-index:5;
+
+    backdrop-filter:blur(10px);
+}
+
+
+/* =========================================================
+   DOTS
+========================================================= */
+
+.dots{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:9px;
+
+    margin:18px 0;
+}
+
+
+.dot{
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:#eee;
+
+    cursor:pointer;
+
+    transition:.35s;
+}
+
+
+.dot.active{
+
+    width:30px;
+
+    border-radius:20px;
+
+    background:#ff4081;
+}
+
+
+/* =========================================================
+   FINAL PAGE
+========================================================= */
+
+.final-card{
+
+    max-width:850px;
+
+    /* NO WHITE BACKGROUND */
+
+    background:
+        rgba(255,255,255,.08);
+
+    border:
+        1px solid
+        rgba(255,255,255,.25);
+
+    backdrop-filter:
+        blur(5px);
+
+    -webkit-backdrop-filter:
+        blur(5px);
+
+    color:white;
+
+    box-shadow:
+        0 20px 60px
+        rgba(0,0,0,.25);
+}
+
+
+.crown{
+
+    font-size:75px;
+
+    animation:
+        floating 2s
+        infinite;
+}
+
+
+.final-title{
+
+    font-size:52px;
+
+    font-weight:900;
+
+    color:#ff80ab;
+
+    animation:
+        glow 1.5s
+        infinite alternate;
+}
+
+
+@keyframes glow{
+
+    from{
+
+        text-shadow:
+            0 0 5px #ff80ab;
+
+    }
+
+    to{
+
+        text-shadow:
+            0 0 20px #ff4081,
+            0 0 45px #ff80ab;
+
+    }
+
+}
+
+
+.final-message{
+
+    font-size:18px;
+
+    line-height:2;
+
+    color:white;
+
+    margin:25px 0;
+
+}
+
+
+/* =========================================================
+   MUSIC BUTTON
+========================================================= */
+
+.music-button{
+
+    position:fixed;
+
+    right:20px;
+
+    top:20px;
+
+    z-index:10000;
+
+    width:auto;
+
+    padding:11px 18px;
+
+    margin:0;
+}
+
+
+/* =========================================================
+   FLOATING HEARTS
+========================================================= */
+
+#hearts{
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+    overflow:hidden;
+
+    z-index:999;
+}
+
+
+.heart{
+
+    position:absolute;
+
+    top:-50px;
+
+    animation:
+        fall linear forwards;
+}
+
+
+@keyframes fall{
+
+    0%{
+
+        transform:
+            translateY(-50px)
+            rotate(0deg);
+
+        opacity:0;
+
+    }
+
+    10%{
+        opacity:1;
+    }
+
+    100%{
+
+        transform:
+            translateY(110vh)
+            rotate(360deg);
+
+        opacity:0;
+
+    }
+
+}
+
+
+/* =========================================================
+   CONFETTI
+========================================================= */
+
+.confetti{
+
+    position:fixed;
+
+    top:-30px;
+
+    z-index:9999;
+
+    pointer-events:none;
+
+    animation:
+        confettiFall
+        4s linear forwards;
+}
+
+
+@keyframes confettiFall{
+
+    0%{
+
+        transform:
+            translateY(0)
+            rotate(0deg);
+
+    }
+
+    100%{
+
+        transform:
+            translateY(110vh)
+            rotate(720deg);
+
+    }
+
+}
+
+
+/* =========================================================
+   FLOATING
+========================================================= */
+
+@keyframes floating{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-12px);
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:700px){
+
+    .page{
+
+        padding:15px;
+
+    }
+
+
+    .card{
+
+        padding:28px 20px;
+
+        border-radius:25px;
+
+    }
+
+
+    /* Birthday */
+
+    .birthday-card{
+
+        display:block;
+
+        text-align:center;
+
+    }
+
+
+    .birthday-title{
+
+        font-size:30px;
+
+    }
+
+
+    .wishes-text{
+
+        font-size:15px;
+
+    }
+
+
+    .birthday-image-frame{
+        max-width:280px;
+        aspect-ratio:4 / 5;
+    }
+
+    .cake-area{
+
+        min-height:250px;
+
+        transform:scale(.75);
+
+    }
+
+
+    /* Surprise */
+
+    .surprise-card{
+
+        margin:0;
+
+        max-width:100%;
+
+        padding:30px 22px;
+
+        background:
+            rgba(255,255,255,.60);
+
+    }
+
+
+    .big-heart{
+
+        text-align:center;
+
+        font-size:65px;
+
+    }
+
+
+    .surprise-title{
+
+        font-size:30px;
+
+        text-align:center;
+
+    }
+
+
+    .message{
+
+        font-size:15px;
+
+        text-align:center;
+
+    }
+
+
+    /* Slideshow */
+
+    .slideshow-card{
+
+        padding:20px 12px;
+
+    }
+
+
+    .slideshow{
+        height: min(52vh, 430px);
+        min-height: 240px;
+        border-radius:18px;
+    }
+
+
+    .slideshow-title{
+
+        font-size:27px;
+
+    }
+
+
+    /* Final */
+
+    .final-title{
+
+        font-size:38px;
+
+    }
+
+
+    .final-message{
+
+        font-size:15px;
+
+    }
+
+
+    .music-button{
+
+        top:10px;
+
+        right:10px;
+
+        padding:8px 13px;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     FLOATING HEARTS
+========================================================= -->
+
+<div id="hearts"></div>
+
+
+<!-- =========================================================
+     MUSIC
+========================================================= -->
+
+<audio id="music.1" loop>
+    <source src="music.1.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="music.2" loop>
+    <source src="music.2.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="music.3" loop>
+    <source src="music.3.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="music.4" loop>
+    <source src="music.4.mp3" type="audio/mpeg">
+</audio>
+
+
+<!-- =========================================================
+     MUSIC BUTTON
+========================================================= -->
+
+<button
+    class="btn music-button"
+    id="musicButton"
+    onclick="toggleMusic()">
+
+    🔇 Music
+
+</button>
+
+
+<!-- =========================================================
+     PAGE 1 — LOGIN
+========================================================= -->
+
+<section
+    class="page active"
+    id="loginPage">
+
+    <div class="card login-card">
+
+        <div class="login-icon">
+            🎂
+        </div>
+
+        <h1 class="login-title">
+            Birthday Surprise
+        </h1>
+
+        <p class="login-subtitle">
+
+            🔐 A special surprise is waiting
+            for someone very special. ❤️
+
+            <br>
+
+            Enter the secret details
+            to unlock your birthday surprise.
+
+        </p>
+
+
+        <div class="input-box">
+
+            <span>👤</span>
+
+            <input
+                id="username"
+                type="text"
+                placeholder="Enter Name"
+                autocomplete="off">
+
+        </div>
+
+
+        <div class="input-box">
+
+            <span>🎂</span>
+
+            <input
+                id="password"
+                type="password"
+                placeholder="Enter Password"
+                autocomplete="off">
+
+        </div>
+
+
+        <button
+            class="btn"
+            onclick="login()">
+
+            🔓 Unlock Surprise ❤️
+
+        </button>
+
+
+        <p style="
+            margin-top:20px;
+            color:#999;
+            font-size:13px;
+        ">
+
+            ✨ Made with love ✨
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PAGE 2 — BIRTHDAY
+========================================================= -->
+
+<section
+    class="page"
+    id="birthdayPage">
+
+    <div class="card birthday-card">
+
+
+        <!-- LEFT -->
+
+        <div class="wishes">
+
+            <div class="small-title">
+                💖 A Special Message For You
+            </div>
+
+
+            <h1 class="birthday-title">
+
+                Happy Birthday
+
+                <br>
+
+                <span class="highlight">
+                    My Dear Akka ❤️
+                </span>
+
+            </h1>
+
+
+            <p class="wishes-text">
+
+                Today is a very special day because someone very special was born. 🎂
+
+                <br><br>
+
+                You bring happiness, love and beautiful memories into my life.
+
+                <br><br>
+
+                I am truly lucky to have you as my Akka. 👑
+
+                <br><br>
+
+                May every dream of yours become reality and may your life always be filled
+                with happiness and smiles. ✨
+
+            </p>
+
+
+            <button
+                class="btn"
+                onclick="openPage(
+                    'birthdayPage',
+                    'surprisePage1',
+                    'music.2'
+                )">
+
+                💝 Continue Surprise
+
+            </button>
+
+        </div>
+
+
+        <!-- RIGHT CAKE -->
+
+        <div class="cake-area">
+
+    <div class="birthday-image-frame">
+        <img src="image.5.jpeg" alt="Beautiful Birthday Memory">
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+     PAGE 3 — SURPRISE
+     LEFT LIGHTWEIGHT BOX
+========================================================= -->
+
+<section
+    class="page"
+    id="surprisePage1">
+
+
+    <div class="card surprise-card">
+
+
+        <div class="big-heart">
+            ❤️
+        </div>
+
+
+        <h1 class="surprise-title">
+
+            You Are Very Special For Me👑
+
+        </h1>
+
+
+        <p class="message">
+
+            Akka...
+
+            <br><br>
+
+            Some people enter our life and make it more beautiful.
+
+            <br>
+
+            You are one of those very special people. ❤️
+
+            <br><br>
+
+            Thank you for every smile,
+            every memory,
+            every little moment,
+            and every bit of happiness.
+
+            <br><br>
+
+            No matter how much time passes,
+
+            <br>
+
+            <b>
+                You will always have a special place in my heart. 💖
+            </b>
+
+        </p>
+
+
+        <button
+            class="btn"
+            onclick="openPage(
+                'surprisePage1',
+                'slideshowPage',
+                'music.3'
+            )">
+
+            📸 Open Our Memories
+
+        </button>
+
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PAGE 4 — SLIDESHOW
+========================================================= -->
+
+<section
+    class="page"
+    id="slideshowPage">
+
+
+    <div class="card slideshow-card">
+
+
+        <h1 class="slideshow-title">
+
+            📸 Our Beautiful Memories For My Imagination 
+
+        </h1>
+
+
+        <p class="slideshow-subtitle">
+
+            Every picture has a story...
+            Every memory has a feeling. ❤️
+
+        </p>
+
+
+        <div class="slideshow">
+
+
+            <!-- IMAGE 1 -->
+
+            <img
+                src="image.9.jpeg"
+                class="slide active"
+                alt="Memory 1">
+
+
+            <!-- IMAGE 2 -->
+
+            <img
+                src="image.6.jpeg"
+                class="slide"
+                alt="Memory 2">
+
+
+            <!-- IMAGE 3 -->
+
+            <img
+                src="image.10.jpeg"
+                class="slide"
+                alt="Memory 3">
+
+
+            <!-- IMAGE 4 -->
+
+            <img
+                src="image.7.jpeg"
+                class="slide"
+                alt="Memory 4">
+
+
+            <!-- IMAGE 5 -->
+
+            <img
+                src="image.11.jpeg"
+                class="slide"
+                alt="Memory 5">
+		
+	    <!-- IMAGE 6 -->
+
+            <img
+                src="image.13.jpeg"
+                class="slide"
+                alt="Memory 6">
+
+           <!-- IMAGE 7 -->
+	   <img
+                src="image.14.jpeg"
+                class="slide"
+                alt="Memory 7">
+
+	   <div
+                class="counter"
+                id="counter">
+
+                1 / 7
+
+            </div>
+
+        </div>
+
+
+        <!-- DOTS -->
+
+        <div
+            class="dots"
+            id="dots">
+
+        </div>
+
+
+        <p style="
+            color:white;
+            text-shadow:0 2px 8px rgba(0,0,0,.5);
+            margin-bottom:5px;
+        ">
+
+            Five pictures...
+            Five memories...
+            Endless happiness. ❤️
+
+        </p>
+
+
+        <button
+            class="btn"
+            onclick="openPage(
+                'slideshowPage',
+                'finalPage',
+                'music.4'
+            )">
+
+            🎁 Final Surprise
+
+        </button>
+
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PAGE 5 — FINAL
+========================================================= -->
+
+<section
+    class="page"
+    id="finalPage">
+
+
+    <div class="card final-card">
+
+
+        <div class="crown">
+            👑
+        </div>
+
+
+        <h1 class="final-title">
+
+            🎉 SURPRISE! 🎉
+
+        </h1>
+
+
+        <div style="
+            font-size:80px;
+            margin:10px 0;
+        ">
+
+            ❤️
+
+        </div>
+
+
+        <p class="final-message">
+
+            Happy Birthday to my wonderful and lovable Akka! 🎂❤️
+
+            <br><br>
+
+            You are not just my sister...
+
+            <br>
+
+            You are my happiness, my support,
+            my beautiful memory, and someone who will always
+            be special to me. ❤️
+
+            <br><br>
+
+            May your life be filled with happiness, success, peace, beautiful memories and
+            endless smiles. ✨
+
+            <br><br>
+
+            <b>
+                Happy Birthday My Loveable Anuty 👑🎂
+            </b>
+
+            <br><br>
+
+            <b>
+                I ❤️ YOU FOREVER!
+            </b>
+
+        </p>
+
+
+        <button
+            class="btn"
+            onclick="celebrate()">
+
+            🎊 Celebrate Again 🎊
+
+        </button>
+
+
+    </div>
+
+</section>
+
+
+<script>
+
+/* =========================================================
+   VARIABLES
+========================================================= */
+
+let currentMusic = null;
+
+let currentSlide = 0;
+
+let slideTimer;
+
+
+/* =========================================================
+   LOGIN
+========================================================= */
+
+function login(){
+
+    const name =
+        document.getElementById("username").value.trim();
+
+    const dob =
+        document.getElementById("password").value.trim();
+
+
+    if(name !== "Kamini" || dob !== "13/10/2005"){
+
+        alert("Incorrect name or password. Please try again ❤️");
+        return;
+    }
+
+
+    openPage(
+        "loginPage",
+        "birthdayPage",
+        "music.1"
+    );
+
+}
+
+
+/* =========================================================
+   OPEN PAGE
+========================================================= */
+
+function openPage(
+    oldPage,
+    newPage,
+    musicId
+){
+
+    document
+        .getElementById(oldPage)
+        .classList.remove("active");
+
+
+    document
+        .getElementById(newPage)
+        .classList.add("active");
+
+
+    if(musicId){
+
+        playMusic(musicId);
+
+    }
+
+
+    if(newPage === "slideshowPage"){
+
+        startSlideshow();
+
+    }
+
+}
+
+
+/* =========================================================
+   MUSIC
+========================================================= */
+
+function playMusic(id){
+
+    const newMusic =
+        document.getElementById(id);
+
+
+    if(!newMusic){
+
+        return;
+    }
+
+
+    if(currentMusic){
+
+        currentMusic.pause();
+
+        currentMusic.currentTime = 0;
+
+    }
+
+
+    currentMusic = newMusic;
+
+
+    currentMusic
+        .play()
+        .catch(() => {});
+
+
+    document
+        .getElementById("musicButton")
+        .innerHTML = "🔊 Music";
+
+}
+
+
+/* =========================================================
+   MUSIC TOGGLE
+========================================================= */
+
+function toggleMusic(){
+
+    if(!currentMusic){
+
+        return;
+    }
+
+
+    if(currentMusic.paused){
+
+        currentMusic
+            .play()
+            .catch(() => {});
+
+        document
+            .getElementById("musicButton")
+            .innerHTML = "🔊 Music";
+
+    }
+
+    else{
+
+        currentMusic.pause();
+
+        document
+            .getElementById("musicButton")
+            .innerHTML = "🔇 Music";
+
+    }
+
+}
+
+
+/* =========================================================
+   SLIDESHOW
+========================================================= */
+
+const slides =
+    document.querySelectorAll(".slide");
+
+const dotsContainer =
+    document.getElementById("dots");
+
+const counter =
+    document.getElementById("counter");
+
+
+/* CREATE DOTS */
+
+slides.forEach(
+    function(slide,index){
+
+        const dot =
+            document.createElement("div");
+
+        dot.className = "dot";
+
+        if(index === 0){
+
+            dot.classList.add("active");
+
+        }
+
+
+        dot.onclick = function(){
+
+            showSlide(index);
+
+        };
+
+
+        dotsContainer.appendChild(dot);
+
+    }
+);
+
+
+function showSlide(index){
+
+    currentSlide = index;
+
+
+    slides.forEach(
+        function(slide,i){
+
+            slide.classList.toggle(
+                "active",
+                i === index
+            );
+
+        }
+    );
+
+
+    const dots =
+        document.querySelectorAll(".dot");
+
+
+    dots.forEach(
+        function(dot,i){
+
+            dot.classList.toggle(
+                "active",
+                i === index
+            );
+
+        }
+    );
+
+
+    counter.innerHTML =
+        (index + 1) +
+        " / " +
+        slides.length;
+
+}
+
+
+function startSlideshow(){
+
+    clearInterval(slideTimer);
+
+
+    showSlide(currentSlide);
+
+
+    slideTimer =
+        setInterval(
+            function(){
+
+                currentSlide++;
+
+                if(
+                    currentSlide >=
+                    slides.length
+                ){
+
+                    currentSlide = 0;
+
+                }
+
+
+                showSlide(currentSlide);
+
+            },
+
+            5000
+        );
+
+}
+
+
+/* =========================================================
+   FLOATING HEARTS
+========================================================= */
+
+function createHeart(){
+
+    const heart =
+        document.createElement("div");
+
+
+    heart.className = "heart";
+
+
+    const heartTypes = [
+        "❤️",
+        "💕",
+        "💗",
+        "💖",
+        "💓"
+    ];
+
+
+    heart.innerHTML =
+        heartTypes[
+            Math.floor(
+                Math.random() *
+                heartTypes.length
+            )
+        ];
+
+
+    heart.style.left =
+        Math.random() * 100 + "%";
+
+
+    heart.style.fontSize =
+        (12 + Math.random() * 22)
+        + "px";
+
+
+    heart.style.animationDuration =
+        (4 + Math.random() * 5)
+        + "s";
+
+
+    document
+        .getElementById("hearts")
+        .appendChild(heart);
+
+
+    setTimeout(
+        function(){
+
+            heart.remove();
+
+        },
+
+        9000
+    );
+
+}
+
+
+setInterval(
+    createHeart,
+    500
+);
+
+
+/* =========================================================
+   CONFETTI
+========================================================= */
+
+function createConfetti(){
+
+    const confetti =
+        document.createElement("div");
+
+
+    confetti.className =
+        "confetti";
+
+
+    const shapes = [
+        "🎉",
+        "✨",
+        "💖",
+        "🎊",
+        "❤️"
+    ];
+
+
+    confetti.innerHTML =
+        shapes[
+            Math.floor(
+                Math.random() *
+                shapes.length
+            )
+        ];
+
+
+    confetti.style.left =
+        Math.random() * 100 + "%";
+
+
+    confetti.style.fontSize =
+        (15 + Math.random() * 25)
+        + "px";
+
+
+    document.body.appendChild(
+        confetti
+    );
+
+
+    setTimeout(
+        function(){
+
+            confetti.remove();
+
+        },
+
+        4500
+    );
+
+}
+
+
+/* =========================================================
+   RETURN TO LOGIN PAGE
+========================================================= */
+
+function returnToLogin(){
+    clearInterval(slideTimer);
+
+    if(currentMusic){
+        currentMusic.pause();
+        currentMusic.currentTime = 0;
+    }
+    currentMusic = null;
+    document.getElementById("musicButton").innerHTML = "🔇 Music";
+
+    document.getElementById("username").value = "";
+    document.getElementById("password").value = "";
+
+    document.querySelectorAll(".page").forEach(function(page){
+        page.classList.remove("active");
+    });
+    document.getElementById("loginPage").classList.add("active");
+}
+
+/* =========================================================
+   CELEBRATE AGAIN
+========================================================= */
+
+function celebrate(){
+
+    for(
+        let i = 0;
+        i < 35;
+        i++
+    ){
+
+        setTimeout(
+            createConfetti,
+            i * 80
+        );
+
+    }
+
+
+    if(currentMusic){
+        currentMusic.pause();
+        currentMusic.currentTime = 0;
+    }
+    currentMusic = null;
+    document.getElementById("musicButton").innerHTML = "🔇 Music";
+    document.getElementById("username").value = "";
+    document.getElementById("password").value = "";
+    document.getElementById("finalPage").classList.remove("active");
+    document.getElementById("loginPage").classList.add("active");
+    clearInterval(slideTimer);
+
+}
+
+
+/* =========================================================
+   START HEARTS
+========================================================= */
+
+for(
+    let i = 0;
+    i < 8;
+    i++
+){
+
+    setTimeout(
+        createHeart,
+        i * 300
+    );
+
+}
+
+</script>
+
+</body>
+
+</html>
